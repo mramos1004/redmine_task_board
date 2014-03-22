@@ -67,6 +67,7 @@
 
 <script type="text/javascript">
   var project_save_url = '/users/<%= @user.id %>/taskboard/save';
+  var project_bulk_edit_url = '<%= Redmine::Utils::relative_url_root %>'+'/issues/bulk_edit?';
   var sections = [];
   $('#sortable-root .taskboard-pane ul').each(function() {
     sections.push($(this).attr('id'));
